@@ -1,0 +1,701 @@
+$lightGrey: #c7c7c7;
+$black: #050505;
+$red: #a71e1e;
+$color: #626454;
+$color: #7f7f80;
+$palePink: #ca4c4c;
+$color: #c7a1a1;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Tinos", serif;
+}
+#container {
+  padding: 0 5% 0 5%;
+}
+
+// NAV BAR --------
+.navbar {
+  font-size: 1.1rem;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: $black;
+  font-weight: 100;
+}
+
+.main-nav li {
+  text-align: center;
+  a {
+    color: #a71e1eb4;
+  }
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.5rem;
+
+  .logoX {
+    color: $red;
+  }
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #000000a8;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+//--------- mobile nav bar ---------------
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 4.5rem;
+    flex-direction: row;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 6rem;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    opacity: 0.8;
+    transform: 5s;
+    color: #16161680;
+  }
+}
+
+// main content ----------
+#mainContent {
+  height: 90vh;
+  .bg_img {
+    background-image: url("/images/malcomx.png");
+    height: 90%;
+    width: 50%;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    opacity: 0.9;
+    border-radius: 3px;
+    margin-top: 20px;
+  }
+  .text {
+    position: relative;
+    .large_text {
+      text-transform: uppercase;
+      padding-top: 10%;
+      margin-left: 10%;
+      color: #a71e1e;
+      font-weight: bold;
+      font-size: 6vw;
+    }
+    .small_text {
+      font-size: 0.8rem;
+      margin-bottom: 1%;
+      padding: 0.5rem 0 0 0;
+      color: #626454;
+      font-style: italic;
+      border-top: 1.5px solid $red;
+      width: 8%;
+    }
+  }
+}
+
+.sectionOne {
+  font-family: "Merriweather";
+  margin: 0 10% 0 10%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  .sectionOne__cardRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cardRight__list {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border-right: solid 2px rgba(0, 0, 0, 0.082);
+      border-left: solid 2px rgba(0, 0, 0, 0.082);
+    }
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-bottom: solid 2px rgba(0, 0, 0, 0.082);
+      height: 190px;
+      width: 250px;
+      color: #a71e1e;
+
+      font-size: 3rem;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      justify-content: center;
+      flex-direction: column;
+      height: 190px;
+      width: 250px;
+    }
+  }
+  .sectionOne__cardLeft {
+    margin: 0 12% 0 12%;
+  }
+
+  .sectionOne__imgOne,
+  .sectionOne__imgTwo {
+    text-align: center;
+  }
+  .sectionOne__imgTwo {
+    img {
+      width: 15%;
+      opacity: 0.8;
+    }
+  }
+  .sectionOne__imgOne {
+    img {
+      filter: grayscale(100%);
+      opacity: 0.8;
+    }
+  }
+
+  .sectionOne__quoteOne {
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    color: #0e0e0ed6;
+  }
+  .sectionOne__quoteTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+
+    .card {
+      margin: 0.8rem;
+      letter-spacing: 0.1em;
+      line-height: 1.8rem;
+      color: #707070;
+
+      button {
+        border-radius: 4px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: #f4f4f4;
+        border: none;
+        margin-top: 1rem;
+
+        &:hover {
+          background-color: rgba(128, 0, 0, 0.397);
+          transition: background-color 0.8s;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(54, 54, 54);
+        }
+      }
+    }
+  }
+}
+
+.sectionTwo {
+  height: 10vh;
+}
+
+.sectionThree {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .sectionThree__imgOne {
+    background-color: #2b2b2b;
+    height: 80%;
+    position: relative;
+    z-index: -10;
+    background-image: url(../images/malcomX-and-ali.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+  }
+  .sectionThree__imgTwo {
+    position: relative;
+    width: 500px;
+    height: 150%;
+    margin-left: 20%;
+    z-index: 10;
+    bottom: 10rem;
+    background-image: url(../images/malcom-collage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(50%);
+  }
+  h2 {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.sectionFour {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 0.8fr 0.5fr 1fr;
+  margin: 0 16% 2% 16%;
+  .sectionFour__cardOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    img {
+      width: 10%;
+      opacity: 0.7;
+    }
+  }
+  .sectionFour__textOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #0e0e0ed6;
+  }
+  .sectionFour__textThree {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #707070;
+    margin-bottom: 1rem;
+  }
+}
+
+.sectionFive {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1.3fr 0.4fr;
+
+  .sectionFive__topCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2.5rem;
+    background-image: url(../images/malcom-money.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    color: #fff;
+    .bg--color {
+      background-color: rgba(0, 0, 0, 0.308);
+      margin: 0 15% 0 15%;
+      padding: 0.5rem;
+    }
+    h2 {
+      font-size: 5vw;
+      padding: 1rem;
+    }
+    p {
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+      margin: 0 15% 0 15%;
+    }
+  }
+
+  .sectionFive__midCard {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+    .top__img {
+      background-image: url(../images/Malcolm-x_colorized_photo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position: 80% 20%;
+    }
+    .midCard__top {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .top__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6rem;
+        .date {
+          font-size: 6vw;
+          font-weight: bold;
+          margin: 0 20% 0 20%;
+          padding-bottom: 2.5rem;
+          color: #0e0e0ed6;
+        }
+        .text {
+          margin: 0 20% 0 20%;
+          font-size: 1.2rem;
+          color: #707070;
+          line-height: 2rem;
+        }
+      }
+    }
+    .midCard__btm {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .btm__cards {
+        background-color: whitesmoke;
+        padding: 0 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  .sectionFive__btmCard {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top: 1px #000 solid;
+      border-bottom: 1px #000 solid;
+
+      .date {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.sectionSix {
+  height: 100vh;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 50% 50%;
+  margin: 0 20% 0 20%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 5vw;
+    .logoX {
+      color: $red;
+    }
+  }
+  p {
+    line-height: 1.6rem;
+  }
+}
+// ----------------------------------tablet 1200px
+// ----------------------------------tablet 1200px
+@media screen and (max-width: 1200px) {
+  #mainContent {
+    .text {
+      .large_text {
+        padding-top: 5%;
+      }
+    }
+    .bg_img {
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 1030px) {
+  #mainContent {
+    .text {
+      .large_text {
+        padding-top: 10%;
+        font-size: 8vw;
+      }
+    }
+  }
+  // -------------- SECTION THREE -----------
+  .sectionThree {
+    .sectionThree__imgTwo {
+      bottom: 5rem;
+    }
+  }
+  // -------------- SECTION FOUR -----------
+  .sectionFour {
+    margin-top: 15%;
+    height: 100%;
+    grid-template-rows: unset;
+    .sectionFour__textOne {
+      text-align: center;
+      padding: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }
+  // -------------- SECTION FIVE -----------
+  .sectionFive {
+    .sectionFive__midCard {
+      .midCard__top {
+        .top__text {
+          .text {
+            margin: 0 10% 0 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #mainContent {
+    .bg_img {
+      margin-top: 0;
+    }
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+//-------------------------------- tablet 780px
+//-------------------------------- tablet 780px
+
+@media screen and (max-width: 790px) {
+  body {
+    background-color: #f4f4f4;
+  }
+  #mainContent {
+    .text {
+      .large_text {
+        padding-top: 6%;
+        font-size: 12vw;
+      }
+    }
+    .bg_img {
+      width: 100%;
+      opacity: 0.5 !important;
+    }
+  }
+
+  //--------- SECTION ONE ---------
+  .sectionOne {
+    grid-template-columns: 100%;
+    .sectionOne__cardRight {
+      display: none;
+    }
+    .sectionOne__quoteOne {
+      line-height: 2.1rem;
+      text-align: center;
+    }
+  }
+  // -------------- SECTION THREE -----------
+  .sectionThree {
+    .sectionThree__imgTwo {
+      background-image: none;
+    }
+  }
+
+  // -------------- SECTION FOUR -----------
+  .sectionFour {
+    margin-top: 0;
+  }
+  // -------------- SECTION FIVE -----------
+  .sectionFive {
+    .sectionFive__midCard {
+      .midCard__top {
+        .top__text {
+          .date {
+            margin: 0;
+          }
+          text-align: center;
+          .text {
+            padding-bottom: 1rem;
+          }
+        }
+      }
+      .midCard__btm {
+        display: none;
+      }
+    }
+  }
+  //  ---------- SECTION SIX ---------------
+  .sectionSix {
+    display: unset;
+    grid-template-columns: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+//----------------------------------- mobile 425px L
+//----------------------------------- mobile 425px L
+@media screen and (max-width: 450px) {
+  #mainContent {
+    height: 100vh;
+    .text {
+      .large_text {
+        padding-top: 15%;
+        font-size: 3.5rem;
+        margin-left: 2%;
+      }
+    }
+    .bg_img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  // SECTION ONE----------
+  .sectionOne {
+    .sectionOne__quoteTwo {
+      grid-template-columns: 1fr;
+      text-align: center;
+      .card {
+        line-height: 1.5rem;
+        button {
+          width: 100%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  //-------------------- SECTION THREE ---------------
+  .sectionThree {
+    height: 100%;
+    .sectionThree__imgOne {
+      background-attachment: unset;
+    }
+  }
+  // -------------- SECTION FOUR -----------
+  .sectionFour {
+    .sectionFour__textOne {
+      padding: 0.5rem 0 1rem 0;
+      line-height: 1.8rem;
+    }
+    .sectionFour__textThree {
+      grid-template-columns: 100%;
+    }
+  }
+  //-------------- SECTION FIVE --------------
+  .sectionFive {
+    .sectionFive__midCard {
+      .top__img {
+        position: absolute;
+        z-index: -100;
+        height: 100%;
+        width: 100%;
+        // opacity: 0.7;
+        filter: brightness(40%);
+      }
+      .midCard__top {
+        .top__text {
+          position: absolute;
+          z-index: 100;
+          .date {
+            color: white;
+            padding: 1rem;
+            font-size: 2rem;
+          }
+          .text {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  //  ---------- SECTION SIX ---------------
+  .sectionSix {
+    h2 {
+      font-size: 3rem;
+      padding-bottom: 0.5rem;
+    }
+    .btmCard {
+      display: none;
+    }
+  }
+}
+
+// mobile 375px M
+@media screen and (max-width: 380px) {
+  #mainContent {
+    height: 100vh;
+    .text {
+      .large_text {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  #history {
+    margin-top: 20%;
+    .historyTitle {
+      font-size: 5vw;
+      margin-top: 15%;
+    }
+    img {
+      height: 100%;
+      width: 90%;
+      margin-left: 15px;
+    }
+  }
+
+  // back of card
+  .title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

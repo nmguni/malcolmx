@@ -1,0 +1,256 @@
+// // ----------------------------------tablet 1200px
+// // ----------------------------------tablet 1200px
+// @media screen and (max-width: 1200px) {
+//   #mainContent {
+//     .text {
+//       .large_text {
+//         padding-top: 5%;
+//       }
+//     }
+//     .bg_img {
+//       width: 60%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 1030px) {
+//   #mainContent {
+//     .text {
+//       .large_text {
+//         padding-top: 10%;
+//         font-size: 8vw;
+//       }
+//     }
+//   }
+//   // -------------- SECTION THREE -----------
+//   .sectionThree {
+//     .imgOne__text {
+//       margin-top: 10%;
+//       text-align: center;
+//       width: 90%;
+//     }
+//     .sectionThree__imgTwo {
+//       bottom: 5rem;
+//     }
+//   }
+//   // -------------- SECTION FOUR -----------
+//   .sectionFour {
+//     margin-top: 15%;
+//     height: 100%;
+//     grid-template-rows: unset;
+//     .sectionFour__textOne {
+//       text-align: center;
+//       padding: 1.5rem;
+//       line-height: 2.5rem;
+//     }
+//   }
+//   // -------------- SECTION FIVE -----------
+//   .sectionFive {
+//     .sectionFive__midCard {
+//       .midCard__top {
+//         .top__text {
+//           .text {
+//             margin: 0 10% 0 10%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //-------------------------------- tablet 780px
+// //-------------------------------- tablet 780px
+// @media screen and (max-width: 790px) {
+//   body {
+//     background-color: #f4f4f4;
+//   }
+//   #mainContent {
+//     .text {
+//       .large_text {
+//         padding-top: 6%;
+//         font-size: 5.2rem;
+//       }
+//     }
+//     .bg_img {
+//       width: 60%;
+//     }
+//   }
+
+//   //--------- SECTION ONE ---------
+//   .sectionOne {
+//     grid-template-columns: 100%;
+//     .sectionOne__cardRight {
+//       display: none;
+//     }
+//     .sectionOne__quoteOne {
+//       line-height: 2.1rem;
+//       text-align: center;
+//     }
+//   }
+//   // -------------- SECTION THREE -----------
+//   .sectionThree {
+//     .imgOne__text {
+//       margin-top: 20%;
+//       background-color: rgba(0, 0, 0, 0.527);
+//     }
+
+//     .sectionThree__imgTwo {
+//       background-image: none;
+//     }
+//   }
+
+//   // -------------- SECTION FOUR -----------
+//   .sectionFour {
+//     margin-top: 0;
+//   }
+//   // -------------- SECTION FIVE -----------
+//   .sectionFive {
+//     .sectionFive__midCard {
+//       .midCard__top {
+//         .top__text {
+//           .date {
+//             margin: 0;
+//           }
+//           text-align: center;
+//           .text {
+//             padding-bottom: 1rem;
+//           }
+//         }
+//       }
+//       .midCard__btm {
+//         display: none;
+//       }
+//     }
+//   }
+//   //  ---------- SECTION SIX ---------------
+//   .sectionSix {
+//     display: unset;
+//     grid-template-columns: 100%;
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+// }
+
+// //----------------------------------- mobile 425px L
+// //----------------------------------- mobile 425px L
+// @media screen and (max-width: 450px) {
+//   #mainContent {
+//     height: 100vh;
+//     .text {
+//       .large_text {
+//         padding-top: 15%;
+//         font-size: 3.5rem;
+//         margin-left: 2%;
+//       }
+//     }
+//     .bg_img {
+//       height: 100%;
+//       width: 100%;
+//     }
+//   }
+//   // SECTION ONE----------
+//   .sectionOne {
+//     .sectionOne__quoteTwo {
+//       grid-template-columns: 1fr;
+//       text-align: center;
+//       .card {
+//         line-height: 1.5rem;
+//         button {
+//           width: 100%;
+//           border-radius: 2px;
+//         }
+//       }
+//     }
+//   }
+//   //-------------------- SECTION THREE ---------------
+//   .sectionThree {
+//     height: 100%;
+//     .sectionThree__imgOne {
+//       background-attachment: unset;
+//     }
+//     .imgOne__text {
+//       margin: 10%;
+//       width: 100%;
+//       margin-right: 0px;
+//     }
+//   }
+//   // -------------- SECTION FOUR -----------
+//   .sectionFour {
+//     .sectionFour__textOne {
+//       padding: 0.5rem 0 1rem 0;
+//       line-height: 1.8rem;
+//     }
+//     .sectionFour__textThree {
+//       grid-template-columns: 100%;
+//     }
+//   }
+//   //-------------- SECTION FIVE --------------
+//   .sectionFive {
+//     .sectionFive__midCard {
+//       .top__img {
+//         position: absolute;
+//         z-index: -100;
+//         height: 100%;
+//         width: 100%;
+//         // opacity: 0.7;
+//         filter: brightness(40%);
+//       }
+//       .midCard__top {
+//         .top__text {
+//           position: absolute;
+//           z-index: 100;
+//           .date {
+//             color: white;
+//             padding: 1rem;
+//             font-size: 2rem;
+//           }
+//           .text {
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   //  ---------- SECTION SIX ---------------
+//   .sectionSix {
+//     h2 {
+//       font-size: 3rem;
+//       padding-bottom: 0.5rem;
+//     }
+//     .btmCard {
+//       display: none;
+//     }
+//   }
+// }
+
+// // mobile 375px M
+// @media screen and (max-width: 380px) {
+//   #mainContent {
+//     height: 100vh;
+//     .text {
+//       .large_text {
+//         font-size: 3.2rem;
+//       }
+//     }
+//   }
+//   #history {
+//     margin-top: 20%;
+//     .historyTitle {
+//       font-size: 5vw;
+//       margin-top: 15%;
+//     }
+//     img {
+//       height: 100%;
+//       width: 90%;
+//       margin-left: 15px;
+//     }
+//   }
+
+//   // back of card
+//   .title {
+//     h2 {
+//       font-size: 2rem;
+//     }
+//   }
+// }
