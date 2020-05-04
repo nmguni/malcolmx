@@ -12,10 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.23.3"
+    "sass": "^1.26.5"
   },
   "dependencies": {
     "gsap": "^3.2.6",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
